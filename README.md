@@ -1,21 +1,24 @@
 # PyTorch-Based K-Means Clustering Project
 
-## 📋 Project Overview
+## Project Overview
 
 This project implements **comparative clustering analysis** using PyTorch-based neural network approaches for **unsupervised news article classification**. The project focuses on non-deterministic clustering methods and stochastic embeddings, fulfilling course requirements for advanced neural network implementations.
 
+### **[Project Report (PDF)](./Project_report.pdf)**
+**[Click here to access the complete academic report](./Project_report.pdf)** - Contains detailed methodology, experimental results, analysis, and conclusions.
+
 ### Key Features
-- ✅ **Custom PyTorch K-Means Implementation** - Built from scratch using PyTorch tensors and CUDA acceleration
-- ✅ **Stochastic Embedding Networks** - Non-deterministic clustering with uncertainty quantification (z = f(x) + ε)
-- ✅ **Comparative Analysis** - Deterministic vs. non-deterministic clustering approaches
-- ✅ **Comprehensive Evaluation** - Multiple clustering metrics (Silhouette, ARI, NMI, etc.)
-- ✅ **Uncertainty Quantification** - Reparameterization trick and input-dependent noise modeling
-- ✅ **Data Preprocessing Pipeline** - Complete TF-IDF feature extraction and text preprocessing
-- ✅ **Rich Visualizations** - PCA/t-SNE projections and performance comparisons
+- **Custom PyTorch K-Means Implementation** - Built from scratch using PyTorch tensors and CUDA acceleration
+- **Stochastic Embedding Networks** - Non-deterministic clustering with uncertainty quantification (z = f(x) + ε)
+- **Comparative Analysis** - Deterministic vs. non-deterministic clustering approaches
+- **Comprehensive Evaluation** - Multiple clustering metrics (Silhouette, ARI, NMI, etc.)
+- **Uncertainty Quantification** - Reparameterization trick and input-dependent noise modeling
+- **Data Preprocessing Pipeline** - Complete TF-IDF feature extraction and text preprocessing
+- **Rich Visualizations** - PCA/t-SNE projections and performance comparisons
 
 ---
 
-## 🛠️ Installation & Requirements
+## Installation & Requirements
 
 ### System Requirements
 - **Operating System**: Linux (Ubuntu/Debian preferred), macOS, or Windows
@@ -160,7 +163,7 @@ chmod +x install_requirements.sh
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### Step-by-Step Execution
 
@@ -186,7 +189,7 @@ jupyter lab
 
 ##### A. Data Preprocessing (REQUIRED FIRST)
 ```
-📓 dataset_preprocessing.ipynb
+dataset_preprocessing.ipynb
 ```
 - **Purpose**: Downloads and preprocesses BBC News dataset
 - **Runtime**: ~5-10 minutes
@@ -203,7 +206,7 @@ jupyter lab
 
 ##### B. Model Training and Evaluation (RUN SECOND)
 ```
-📓 training_and_comparison.ipynb
+training_and_comparison.ipynb
 ```
 - **Purpose**: Trains PyTorch models and performs comparative analysis
 - **Runtime**: ~10-20 minutes (depends on GPU availability)
@@ -235,7 +238,7 @@ jupyter nbconvert --to notebook --execute training_and_comparison.ipynb
 
 ---
 
-## 📊 Expected Results and Outputs
+## Expected Results and Outputs
 
 ### Generated Files
 
@@ -268,7 +271,7 @@ After successful execution, you'll have these files:
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ### Core Components
 
@@ -318,7 +321,7 @@ Visualization & Results
 
 ---
 
-## ⚙️ Configuration Options
+## Configuration Options
 
 ### Model Hyperparameters
 
@@ -389,7 +392,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 ---
 
-## 🧪 Advanced Usage
+## Advanced Usage
 
 ### Custom Dataset Integration
 
@@ -438,7 +441,7 @@ batch_size = 512  # Increase for more memory, decrease for less
 
 ---
 
-## 📈 Evaluation Metrics Explained
+## Evaluation Metrics Explained
 
 ### Unsupervised Clustering Metrics
 
@@ -470,7 +473,7 @@ batch_size = 512  # Increase for more memory, decrease for less
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues and Solutions
 
@@ -551,25 +554,26 @@ pip install wordcloud --no-cache-dir
 
 ---
 
-## 🎯 Assignment Compliance
+## Assignment Compliance
 
 This project fulfills the following academic requirements:
 
-### Core Requirements ✅
+### Core Requirements
 - **Non-deterministic Models**: Stochastic Embedding Network with z = f(x) + ε
 - **Reparameterization Trick**: Implemented for gradient-based training  
 - **Uncertainty Quantification**: Input-dependent noise modeling
 - **Comparative Analysis**: Multiple clustering approaches compared
 - **Comprehensive Evaluation**: Multiple metrics (Silhouette, ARI, NMI, etc.)
 
-### Technical Implementation ✅
+### Technical Implementation
 - **PyTorch Framework**: All models built using PyTorch tensors and nn.Module
 - **CUDA Support**: Automatic GPU acceleration when available
 - **From-Scratch Implementation**: Custom K-Means implementation in PyTorch
 - **Neural Network Architecture**: Deep embedding networks for clustering
 - **Gradient-Based Optimization**: Adam optimizer with custom loss functions
 
-### Deliverables ✅
+### Deliverables
+- **Academic Report**: [Complete project report (PDF)](./Project_report.pdf) with methodology and analysis
 - **Complete Code**: Two comprehensive Jupyter notebooks
 - **Documentation**: This comprehensive README
 - **Results**: Quantitative evaluation metrics and visualizations  
@@ -577,7 +581,7 @@ This project fulfills the following academic requirements:
 
 ---
 
-## 📚 References and Resources
+## References and Resources
 
 ### Academic Papers
 - "Auto-Encoding Variational Bayes" (Kingma & Welling, 2013) - Reparameterization trick
@@ -595,22 +599,23 @@ This project fulfills the following academic requirements:
 
 ---
 
-## 👥 Contributing and Support
+## Contributing and Support
 
 ### Project Structure
 ```
 Cse425-Project-Pytorch-based-basic-kmeans/
 ├── README.md                              # This comprehensive guide
-├── dataset_preprocessing.ipynb            # Data preprocessing and TF-IDF extraction
-├── training_and_comparison.ipynb         # Model training and evaluation
-├── processed_news_data.csv              # Preprocessed dataset (generated)
-├── model_results.pkl                     # Trained models (generated)
-├── model_evaluation_results.csv         # Evaluation metrics (generated)
-├── pytorch_model_comparison.png         # Performance visualizations (generated)
+├── Project_report.pdf                    # Complete Academic Report
+├── research_paper.tex                    # LaTeX source for report
+├── dataset_preprocessing.ipynb           # Data preprocessing and TF-IDF extraction
+├── training_and_comparison.ipynb        # Model training and evaluation
+├── processed_news_data.csv             # Preprocessed dataset (generated)
+├── model_results.pkl                    # Trained models (generated)
+├── model_evaluation_results.csv        # Evaluation metrics (generated)
+├── pytorch_model_comparison.png        # Performance visualizations (generated)
 ├── pytorch_clustering_visualization.png # Cluster visualizations (generated)
-├── preprocessing_summary.pkl            # Preprocessing statistics (generated)
-├── tfidf_features.pkl                  # TF-IDF features (generated)
-└── research_paper.pdf                   # Academic paper (if available)
+├── preprocessing_summary.pkl           # Preprocessing statistics (generated)
+└── tfidf_features.pkl                  # TF-IDF features (generated)
 ```
 
 ### Getting Help
@@ -630,16 +635,16 @@ Cse425-Project-Pytorch-based-basic-kmeans/
 
 ---
 
-## 📋 Project Summary
+## Project Summary
 
 This project provides a **comprehensive implementation** of PyTorch-based clustering methods with emphasis on:
 
-🔬 **Research Focus**: Non-deterministic clustering with uncertainty quantification  
-⚙️ **Technical Depth**: Custom PyTorch implementations built from scratch  
-📊 **Evaluation Rigor**: Multiple clustering metrics and comparative analysis  
-🎨 **Visualization**: Rich plots and interactive comparisons  
-📖 **Documentation**: Complete setup and usage instructions  
-🔧 **Reproducibility**: Detailed environment specifications and execution steps  
+- **Research Focus**: Non-deterministic clustering with uncertainty quantification  
+- **Technical Depth**: Custom PyTorch implementations built from scratch  
+- **Evaluation Rigor**: Multiple clustering metrics and comparative analysis  
+- **Visualization**: Rich plots and interactive comparisons  
+- **Documentation**: Complete setup and usage instructions  
+- **Reproducibility**: Detailed environment specifications and execution steps  
 
 **Target Audience**: Students, researchers, and practitioners interested in advanced clustering methods and PyTorch implementation techniques.
 
